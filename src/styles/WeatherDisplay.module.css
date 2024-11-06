@@ -1,0 +1,44 @@
+/* src/styles/WeatherDisplay.module.css */
+
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  color: #ecf0f1;
+  font-family: "Poppins", sans-serif;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 600;
+  color: #00c6ff;
+  text-shadow: 0px 4px 8px rgba(0, 198, 255, 0.2);
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2em;
+  font-weight: 400;
+  color: #f5f5f5;
+  margin: 10px 0;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.6em; /* smaller heading on mobile */
+  }
+
+  p {
+    font-size: 1em; /* reduce paragraph font size */
+  }
+
+  .container {
+    padding: 20px; /* reduce padding on mobile */
+  }
+}
